@@ -7127,7 +7127,7 @@ img {
 }
 
 .full-page-5 {
-  height: 50vh;
+  height: 25vh;
   display: block;
 }
 
@@ -7507,7 +7507,7 @@ img {
   height: 80vh;
   margin-left: 7.5vw;
   margin-right: 7.5vw;
-  display: flex;
+  display: none;
 }
 
 .heading-15 {
@@ -9409,7 +9409,7 @@ img {
     flex-flow: column;
     justify-content: flex-start;
     height: 80vh;
-    display: flex;
+    display: none;
   }
 
   .heading-15 {
