@@ -4407,7 +4407,9 @@ img {
 
 .hero-tag-font {
   color: #191919;
+  font-family: Helvetica Now Display, sans-serif;
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .button-2 {
