@@ -11810,7 +11810,7 @@ img {
   .home-menu-text {
     color: #191919;
     font-family: "9492805 Maisonneueext", Impact, sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 300;
   }
 
@@ -11823,7 +11823,7 @@ img {
   .phone-menu-text-2 {
     color: #191919;
     font-family: "9492803 Maisonneueext Demi", Impact, sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 400;
   }
 
@@ -13638,6 +13638,7 @@ img {
   }
 
   .dropdown-mobile-wrap {
+    background-color: #fff0;
     justify-content: flex-end;
     margin-top: 0;
     margin-right: 0;
@@ -13650,7 +13651,7 @@ img {
   .home-menu-text {
     color: #191919;
     font-family: "9492807 Maisonneueext", Impact, sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 400;
     text-decoration: none;
     display: block;
@@ -13671,7 +13672,7 @@ img {
     padding-bottom: 0;
     padding-right: 0;
     font-family: "9492803 Maisonneueext Demi", Impact, sans-serif;
-    font-size: .98rem;
+    font-size: 1.1rem;
     font-weight: 500;
     text-decoration: none;
     display: block;
