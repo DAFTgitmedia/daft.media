@@ -4677,7 +4677,7 @@ img {
   letter-spacing: normal;
   align-items: center;
   font-family: "9492799 Maisonneueext Book", Impact, sans-serif;
-  font-size: .8rem;
+  font-size: .6rem;
   line-height: 1.5;
   display: flex;
 }
@@ -4891,6 +4891,7 @@ img {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  display: none;
 }
 
 .uui-pricing06_price {
@@ -4966,8 +4967,8 @@ img {
 }
 
 .uui-pricing05_component {
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 2rem;
@@ -5014,7 +5015,7 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "9492803 Maisonneueext Demi", Impact, sans-serif;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -5036,7 +5037,7 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "9492805 Maisonneueext", Impact, sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.5;
 }
@@ -5273,7 +5274,7 @@ img {
 
 .text-block-9, .text-block-10, .text-block-11 {
   font-family: "9492803 Maisonneueext Demi", Impact, sans-serif;
-  font-size: 1rem;
+  font-size: .75rem;
 }
 
 .btn-text {
@@ -5284,7 +5285,7 @@ img {
   color: var(--untitled-ui--gray600);
   letter-spacing: normal;
   font-family: "9492797 Maisonneueext", Impact, sans-serif;
-  font-size: .7rem;
+  font-size: .5rem;
   line-height: 1.5;
 }
 
@@ -6151,7 +6152,7 @@ img {
   margin-left: 0;
   margin-right: 4vw;
   font-family: "9492801 Maisonneueext", Impact, sans-serif;
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   line-height: 1.2;
   display: block;
 }
@@ -6175,8 +6176,8 @@ img {
 }
 
 .backgroundvideo {
-  width: 75vw;
-  height: 75vh;
+  width: 100vw;
+  height: 100vh;
   position: relative;
 }
 
@@ -6328,7 +6329,7 @@ img {
 .slide-heading {
   color: var(--untitled-ui--gray900);
   align-items: flex-end;
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   display: flex;
 }
 
@@ -6572,7 +6573,7 @@ img {
 
 .image-14 {
   width: 300px;
-  max-width: 20rem;
+  max-width: 17.5rem;
   margin-top: 0;
 }
 
@@ -6875,7 +6876,7 @@ img {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  display: none;
+  display: flex;
   position: relative;
 }
 
@@ -6886,7 +6887,7 @@ img {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  display: flex;
+  display: none;
   position: relative;
 }
 
@@ -7813,6 +7814,56 @@ img {
   display: none;
 }
 
+.full-page-ani {
+  width: 100vw;
+  height: 100vh;
+}
+
+.full-page-0-mob {
+  z-index: 1;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: static;
+}
+
+.full-page-0-mob.is-horizontal-scroll-section {
+  border: 2px solid red;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  display: flex;
+}
+
+.full-page-0-mob.is-horizontal-scroll-section.is-one {
+  border-width: 0;
+  width: 60vw;
+  margin-left: 4vw;
+  margin-right: 2vw;
+}
+
+.full-page-0-mob.is-horizontal-scroll-section.is-two {
+  border-width: 0;
+  align-items: flex-end;
+  width: 60vw;
+  margin-left: 2.5vw;
+}
+
+.full-page-0-mob.is-horizontal-scroll-section.is-three, .full-page-0-mob.is-horizontal-scroll-section.is-four {
+  border-width: 0;
+  align-items: flex-end;
+  width: 60vw;
+  margin-left: 1.5vw;
+}
+
+.full-page-ani-mob {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
 @media screen and (min-width: 1280px) {
   .nav-container.is-details {
     padding-bottom: 0;
@@ -7974,7 +8025,7 @@ img {
   }
 
   .uui-text-size-medium {
-    font-size: .75rem;
+    font-size: .67rem;
   }
 
   .uui-text-size-large {
@@ -7996,6 +8047,14 @@ img {
 
   .uui-pricing05_plan-one {
     padding-bottom: 1rem;
+  }
+
+  .uui-pricing05_price {
+    font-size: 2rem;
+  }
+
+  .uui-pricing05_heading {
+    font-size: 1.9rem;
   }
 
   .sticky {
@@ -8539,8 +8598,16 @@ img {
     font-size: 2.25rem;
   }
 
+  .uui-pricing05_price-text {
+    font-size: .7rem;
+  }
+
   .uui-pricing05_heading {
     font-size: 2.1rem;
+  }
+
+  .uui-text-size-medium-2 {
+    font-size: .6rem;
   }
 
   .sticky {
@@ -8563,7 +8630,7 @@ img {
 
   .image-14 {
     width: 500px;
-    max-width: 25rem;
+    max-width: 22.5rem;
   }
 
   .contact-section {
@@ -9142,7 +9209,7 @@ img {
   }
 
   .hero-tag {
-    margin-top: 0;
+    margin-top: -2vw;
   }
 
   .hero-tag-font {
@@ -9171,7 +9238,7 @@ img {
   }
 
   .uui-text-size-medium {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 
   .uui-container-large {
@@ -9180,6 +9247,7 @@ img {
 
   .uui-max-width-large.align-center {
     max-width: 80rem;
+    margin-bottom: 2vh;
   }
 
   .uui-text-size-large {
@@ -9189,6 +9257,7 @@ img {
 
   .uui-heading-medium {
     max-width: none;
+    margin-bottom: 0;
     font-size: 3rem;
   }
 
@@ -9204,6 +9273,7 @@ img {
 
   .uui-heading-subheading {
     font-size: 2rem;
+    display: none;
   }
 
   .uui-pricing05_divider {
@@ -9220,13 +9290,25 @@ img {
   }
 
   .uui-pricing05_price {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+
+  .uui-pricing05_price-text {
+    font-size: 1rem;
   }
 
   .uui-pricing05_heading {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 3.2rem;
+  }
+
+  .text-block-9, .text-block-10, .text-block-11 {
+    font-size: 1rem;
+  }
+
+  .uui-text-size-medium-2 {
+    font-size: .9rem;
   }
 
   .heading-13 {
@@ -9262,7 +9344,7 @@ img {
   }
 
   .bold-text-5 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .full-page-4 {
@@ -9272,7 +9354,7 @@ img {
   }
 
   .image-14 {
-    max-width: 30rem;
+    max-width: 26rem;
   }
 
   .get-in-touch {
@@ -9362,7 +9444,7 @@ img {
   }
 
   .illustrations {
-    width: 50%;
+    width: 40%;
     top: 5%;
     left: 45%;
   }
@@ -9533,7 +9615,7 @@ img {
 
   .hero_wrap {
     margin-top: 0;
-    padding-top: 37vh;
+    padding-top: 48vh;
   }
 
   .heading {
@@ -10582,7 +10664,7 @@ img {
   }
 
   .services-section {
-    margin-top: -27vw;
+    margin-top: -30vw;
     margin-left: 3vw;
     margin-right: 3vw;
     top: 0;
@@ -10700,7 +10782,7 @@ img {
   }
 
   .hero-tag {
-    margin-top: 10vw;
+    margin-top: 2vw;
     margin-bottom: 5vh;
   }
 
@@ -10989,13 +11071,25 @@ img {
     display: flex;
   }
 
+  .full-page.is-horizontal-scroll-section.is-two, .full-page.is-horizontal-scroll-section.is-three {
+    width: 70vw;
+  }
+
   .sticky {
     height: 100vh;
     overflow: hidden;
   }
 
+  .slide-1, .slide-2, .slide-3 {
+    width: 70vw;
+  }
+
   .slide-heading {
     font-size: 2.35rem;
+  }
+
+  .full-page-2.is-horizontal-scroll-section.is-four {
+    width: 70vw;
   }
 
   .full-page-3 {
@@ -11241,6 +11335,11 @@ img {
   }
 
   .mob-arrow-link {
+    display: none;
+  }
+
+  .full-page-0-mob {
+    height: 100%;
     display: none;
   }
 }
@@ -12699,6 +12798,7 @@ img {
 
   .full-page-0 {
     height: 100%;
+    display: none;
   }
 
   .bold-text-5 {
@@ -12777,7 +12877,7 @@ img {
   }
 
   .modal-wrapper {
-    display: flex;
+    display: none;
   }
 
   .modal {
@@ -13036,6 +13136,21 @@ img {
 
   .mob-arrow-link {
     display: inline-block;
+  }
+
+  .full-page-ani {
+    height: auto;
+    display: block;
+  }
+
+  .full-page-0-mob {
+    height: 100%;
+    display: block;
+  }
+
+  .full-page-ani-mob {
+    height: auto;
+    display: block;
   }
 }
 
@@ -13986,7 +14101,7 @@ img {
 
   .daft-nav-logo {
     width: 250px;
-    max-width: 8rem;
+    max-width: 9rem;
     display: inline-flex;
   }
 
@@ -14029,7 +14144,7 @@ img {
   }
 
   .hero-tag {
-    margin: 20vw 7.5vw 10vh;
+    margin: 15vw 7.5vw 10vh;
   }
 
   .grid-7 {
@@ -14093,6 +14208,10 @@ img {
     height: 85%;
   }
 
+  .uui-pricing05_component {
+    margin-top: 1.5rem;
+  }
+
   .uui-pricing05_plan-one {
     margin-bottom: 5vh;
     padding-bottom: 1rem;
@@ -14103,7 +14222,7 @@ img {
   }
 
   .uui-pricing05_price-text {
-    font-size: 1rem;
+    font-size: .75rem;
   }
 
   .uui-pricing05_heading {
@@ -14124,6 +14243,10 @@ img {
 
   .text-block-11 {
     font-size: .9rem;
+  }
+
+  .uui-text-size-medium-2 {
+    font-size: .7rem;
   }
 
   .hide-mobile-portrait {
@@ -14254,6 +14377,7 @@ img {
   .full-page-0 {
     height: 100%;
     margin-top: 5vh;
+    display: none;
   }
 
   .full-page-about {
@@ -14568,12 +14692,23 @@ img {
     font-size: 3rem;
   }
 
-  .daft-nav-logo-white-bg, .daft-nav-logo-white {
+  .daft-nav-logo-white-bg {
     width: 250px;
     max-width: 8rem;
   }
 
-  .daft-nav-logo-works, .daft-nav-logo-copy {
+  .daft-nav-logo-white {
+    width: 250px;
+    max-width: 9rem;
+  }
+
+  .daft-nav-logo-works {
+    width: 250px;
+    max-width: 9rem;
+    display: none;
+  }
+
+  .daft-nav-logo-copy {
     width: 250px;
     max-width: 8rem;
     display: none;
@@ -14720,17 +14855,31 @@ img {
   .mob-arrow-link {
     display: inline-block;
   }
+
+  .full-page-ani {
+    height: auto;
+    display: block;
+  }
+
+  .full-page-0-mob {
+    height: 100%;
+    margin-top: 5vh;
+  }
+
+  .full-page-ani-mob {
+    height: auto;
+  }
 }
 
-#w-node-_56f98c7d-63f8-f442-0fdb-beb47cf5cc3d-410727b4, #w-node-_19dabaa3-6ded-09ca-0f9b-6f05fc49d7ea-410727b4 {
+#w-node-ff197668-4bf4-f62a-7dc1-09ec1fa0d31d-410727b4, #w-node-ff197668-4bf4-f62a-7dc1-09ec1fa0d327-410727b4 {
   place-self: auto;
 }
 
-#w-node-fcd4ed12-1fd6-8153-c015-69862dd4b8c3-410727b4 {
+#w-node-ff197668-4bf4-f62a-7dc1-09ec1fa0d331-410727b4 {
   place-self: end center;
 }
 
-#w-node-a05ca70d-4a79-ee60-0360-56e4e3c55134-410727b4 {
+#w-node-ff197668-4bf4-f62a-7dc1-09ec1fa0d33b-410727b4 {
   place-self: auto center;
 }
 
