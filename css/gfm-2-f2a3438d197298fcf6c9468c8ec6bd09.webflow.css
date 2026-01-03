@@ -3121,6 +3121,13 @@ img {
   position: static;
 }
 
+.container-10 {
+  width: 100%;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 1280px) {
   .nav_wrap {
     display: none;
@@ -4219,6 +4226,15 @@ img {
     margin-top: 0;
     font-size: 4rem;
   }
+
+  .container-10 {
+    width: auto;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -4898,6 +4914,10 @@ img {
   .full-page-0-mob {
     height: 100%;
     display: none;
+  }
+
+  .container-10 {
+    max-width: none;
   }
 }
 
@@ -5750,6 +5770,10 @@ img {
   .full-page-0-mob {
     height: 100%;
     display: block;
+  }
+
+  .container-10 {
+    max-width: none;
   }
 }
 
@@ -6717,6 +6741,10 @@ img {
   .full-page-0-mob {
     height: 100%;
     margin-top: 5vh;
+  }
+
+  .container-10 {
+    max-width: none;
   }
 }
 
