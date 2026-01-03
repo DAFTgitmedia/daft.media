@@ -1430,8 +1430,8 @@ img {
   text-underline-position: under;
   color: #d8a628;
   margin-left: 5px;
-  margin-right: 10px;
-  padding: 5px 5px 5px 10px;
+  margin-right: 5px;
+  padding: 5px 10px;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-decoration-thickness: 3px;
@@ -2751,6 +2751,8 @@ img {
 }
 
 .content-wrap-2 {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   justify-content: flex-end;
   width: 40%;
   display: flex;
@@ -3128,6 +3130,23 @@ img {
   margin-right: auto;
 }
 
+.daft-nav-logo-2 {
+  z-index: 9999;
+  overflow-wrap: normal;
+  border-radius: 0;
+  width: 200px;
+  max-width: 12rem;
+  display: inline-block;
+  position: relative;
+}
+
+.container-11 {
+  width: 100%;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 1280px) {
   .nav_wrap {
     display: none;
@@ -3336,6 +3355,12 @@ img {
   .email-heading-contact-footer.black {
     color: var(--untitled-ui--white);
     font-size: 2.75rem;
+  }
+
+  .daft-nav-logo-2 {
+    width: 250px;
+    max-width: 16rem;
+    overflow: hidden;
   }
 }
 
@@ -3708,6 +3733,11 @@ img {
   .email-heading-contact-footer.black {
     color: var(--untitled-ui--white);
     font-size: 3rem;
+  }
+
+  .daft-nav-logo-2 {
+    width: 250px;
+    max-width: 20rem;
   }
 }
 
@@ -4228,6 +4258,20 @@ img {
   }
 
   .container-10 {
+    width: auto;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .daft-nav-logo-2 {
+    width: 300px;
+    max-width: 25rem;
+  }
+
+  .container-11 {
     width: auto;
     max-width: none;
     margin-left: 0;
@@ -4916,7 +4960,7 @@ img {
     display: none;
   }
 
-  .container-10 {
+  .container-10, .container-11 {
     max-width: none;
   }
 }
@@ -5773,6 +5817,14 @@ img {
   }
 
   .container-10 {
+    max-width: none;
+  }
+
+  .daft-nav-logo-2 {
+    max-width: 10rem;
+  }
+
+  .container-11 {
     max-width: none;
   }
 }
@@ -6744,6 +6796,16 @@ img {
   }
 
   .container-10 {
+    max-width: none;
+  }
+
+  .daft-nav-logo-2 {
+    width: 250px;
+    max-width: 9rem;
+    display: inline-flex;
+  }
+
+  .container-11 {
     max-width: none;
   }
 }
