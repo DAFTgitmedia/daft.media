@@ -3556,6 +3556,10 @@ img {
     font-size: .6rem;
   }
 
+  .slidetext {
+    width: 80%;
+  }
+
   .sticky {
     overflow: hidden;
   }
