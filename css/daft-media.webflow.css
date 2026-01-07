@@ -4742,6 +4742,8 @@ img {
 
   .dropdown-content {
     width: 25%;
+    margin-right: 7vw;
+    padding-right: 1vw;
   }
 
   .dropdown-link {
@@ -4781,8 +4783,6 @@ img {
     justify-content: flex-end;
     width: 100vw;
     margin-top: -4vh;
-    margin-right: 0;
-    padding-right: 7.5vw;
     display: flex;
     position: fixed;
     top: 5.5rem;
@@ -4984,7 +4984,7 @@ img {
     padding-right: 5px;
   }
 
-  .how-nav.underline-trail, .services-nav.underline-trail, .list-item-2, .list-item-3 {
+  .daft-nav-logo, .how-nav.underline-trail, .services-nav.underline-trail, .list-item-2, .list-item-3 {
     display: none;
   }
 
@@ -5283,6 +5283,10 @@ img {
     font-size: 3.5rem;
   }
 
+  .daft-nav-logo-white {
+    display: inline-flex;
+  }
+
   .sticky-mobile {
     height: 100vh;
     overflow: hidden;
@@ -5537,7 +5541,6 @@ img {
   .dropdown-mobile-wrap {
     justify-content: flex-end;
     margin-top: -5vh;
-    padding-right: 7vw;
     display: flex;
     position: fixed;
     top: 5.75rem;
@@ -6396,6 +6399,8 @@ img {
 
   .dropdown-content {
     width: 50%;
+    margin-right: 7vw;
+    padding-right: 1vw;
   }
 
   .dropdown-link {
@@ -6448,6 +6453,7 @@ img {
     margin-top: 0;
     margin-right: 0;
     padding-left: 0;
+    padding-right: 0;
     display: flex;
     position: fixed;
     top: 3.35rem;
@@ -6586,7 +6592,7 @@ img {
   .daft-nav-logo {
     width: 250px;
     max-width: 9rem;
-    display: inline-flex;
+    display: none;
   }
 
   .body-2 {
@@ -7115,6 +7121,7 @@ img {
   .daft-nav-logo-white {
     width: 250px;
     max-width: 9rem;
+    display: inline-flex;
   }
 
   .daft-nav-logo-works {
