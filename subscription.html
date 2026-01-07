@@ -1,20 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Jan 07 2026 13:16:35 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="693bf919ec57d63308aa3105" data-wf-site="68c975cb862aeb40410727c7" lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S20D64T3YS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-S20D64T3YS');
-</script>
   <meta charset="utf-8">
-  <title>DAFT - Subscription | Subscription Multimedia Design, Video Production, Motion Graphics, Graphic Design, Web Design &amp Branding</title>
-<meta name="description" content="Discover how DAFT's flexible subscription service works. Get video production, motion graphics, graphic design, web design, and branding support tailored to your business needs.">
-<meta name="keywords" content="DAFT subscription service, multimedia design, video production, motion graphics, graphic design, web design, branding, creative support, how it works">
-
+  <title>Subscription</title>
+  <meta content="Discover how DAFT&#x27;s flexible subscription service works. Get video production, motion graphics, graphic design, web design, and branding support tailored to your business needs." name="description">
   <meta content="Subscription" property="og:title">
   <meta content="Discover how DAFT&#x27;s flexible subscription service works. Get video production, motion graphics, graphic design, web design, and branding support tailored to your business needs." property="og:description">
   <meta content="Subscription" property="twitter:title">
@@ -68,11 +57,16 @@ body {
   opacity: 0.06;
   z-index: 9999;
 }
-.daft-nav-logo-white {
-  display: inline-block;
+.navbar-logo-center-container {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }
-.daft-nav-logo-works {
-  display: none;
+.navbar-logo-center-container.no-glass {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background: transparent;
 }
 .code {
   position: relative;
@@ -471,6 +465,24 @@ if (!Object.hasOwn) {
 }
 </script>
   <script>
+// Detect scroll position and toggle navbar glass effect
+const navbar = document.querySelector('.navbar-logo-center-container');
+const contactSection = document.querySelector('.contact-section');
+function checkScroll() {
+  const scrollPos = window.scrollY + 100; // offset for navbar height
+  const contactTop = contactSection?.offsetTop || 0;
+  const contactBottom = contactTop + (contactSection?.offsetHeight || 0);
+  // Check if we're in contact section
+  if (scrollPos >= contactTop && scrollPos <= contactBottom) {
+    navbar.classList.add('no-glass');
+  } else {
+    navbar.classList.remove('no-glass');
+  }
+}
+window.addEventListener('scroll', checkScroll);
+window.addEventListener('load', checkScroll);
+</script>
+  <script>
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 var isMobileUA = /iPhone|iPad|Android/i.test(navigator.userAgent);
@@ -496,28 +508,6 @@ if (!isMobileUA) {
   gsap.ticker.lagSmoothing(0);
 }
 ScrollTrigger.config({ autoRefreshEvents: "visibilitychange,DOMContentLoaded,load" });
-</script>
-  <script>
-gsap.registerPlugin(ScrollTrigger);
-ScrollTrigger.create({
-  trigger: document.body,
-  start: "top top",
-  end: "bottom bottom",
-  scrub: true,
-  onUpdate: self => {
-    const progress = self.progress;
-    const whiteLogo = document.querySelector(".daft-nav-logo-white");
-    const worksLogo = document.querySelector(".daft-nav-logo-works");
-    if (!whiteLogo || !worksLogo) return;
-    if (progress >= 0.93) {
-      whiteLogo.style.display = "none";
-      worksLogo.style.display = "inline-block";
-    } else {
-      whiteLogo.style.display = "inline-block";
-      worksLogo.style.display = "none";
-    }
-  }
-});
 </script>
 </body>
 </html>
