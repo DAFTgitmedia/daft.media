@@ -6671,6 +6671,10 @@ img {
     font-size: 1.5rem;
   }
 
+  .uui-padding-vertical-xhuge {
+    padding-top: 0;
+  }
+
   .uui-heading-subheading {
     font-size: 1rem;
   }
@@ -6807,7 +6811,7 @@ img {
   }
 
   .full-page-3 {
-    height: 20vh;
+    height: 5vh;
     display: flex;
   }
 
@@ -6973,7 +6977,7 @@ img {
   }
 
   .illustrations {
-    width: 47%;
+    width: 40%;
     top: 4%;
     left: 50%;
   }
