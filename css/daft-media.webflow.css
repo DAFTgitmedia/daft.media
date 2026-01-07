@@ -6687,6 +6687,8 @@ img {
   }
 
   .uui-pricing05_component {
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
     margin-top: 1.5rem;
   }
 
@@ -6704,7 +6706,7 @@ img {
   }
 
   .uui-pricing05_heading {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     font-size: 2rem;
   }
 
@@ -7306,7 +7308,7 @@ img {
     font-size: 1.75rem;
   }
 
-  .site-text-block-bluebuild {
+  .site-text-block-bluebuild, .casestudy {
     font-size: .7rem;
   }
 
@@ -7325,7 +7327,7 @@ img {
   .site-text-block-bluebuild-text2 {
     padding-top: 0;
     padding-bottom: 0;
-    font-size: .8rem;
+    font-size: .7rem;
   }
 
   .grid-9 {
@@ -7348,7 +7350,7 @@ img {
   }
 
   .uui-pricing05_packages-heading {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     font-size: 2rem;
   }
 }
