@@ -5,7 +5,7 @@
   <priority>1.0</priority> <!-- homepage = highest priority -->
 </url>
 <url>
-  <loc>https://daft.media/how-it-works</loc>
+  <loc>https://daft.media/subscription</loc>
   <priority>0.8</priority> <!-- subpage = high but not homepage -->
 </url>
 <url>
