@@ -3257,7 +3257,7 @@ img {
   color: var(--untitled-ui--white);
   text-align: center;
   white-space: nowrap;
-  background-color: #fff;
+  background-color: #fdfdfd;
   border-radius: .5rem;
   flex-flow: row;
   justify-content: center;
@@ -6781,7 +6781,7 @@ img {
   }
 
   .slide-1, .slide-2, .slide-3 {
-    width: 95vw;
+    width: 93.2vw;
     height: 50vh;
   }
 
