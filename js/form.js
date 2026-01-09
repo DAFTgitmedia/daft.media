@@ -1,4 +1,4 @@
-  <script>
+
   document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form[data-netlify='true']");
   if (!form) return;
@@ -25,4 +25,4 @@
       });
   });
 });
-  </script>
+
