@@ -4042,7 +4042,7 @@ img {
   }
 
   .uui-text-size-medium {
-    font-size: .67rem;
+    font-size: .85rem;
   }
 
   .uui-max-width-large.align-center {
@@ -4091,7 +4091,7 @@ img {
     margin-bottom: 0;
   }
 
-  .text-block-10 {
+  .text-block-9, .text-block-10, .text-block-11 {
     font-size: 1rem;
   }
 
@@ -4599,7 +4599,7 @@ img {
   }
 
   .uui-text-size-medium {
-    font-size: .9rem;
+    font-size: 1rem;
   }
 
   .uui-container-large {
