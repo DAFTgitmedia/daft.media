@@ -1,21 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jan 11 2026 11:48:47 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="68c975cb862aeb40410727b4" data-wf-site="68c975cb862aeb40410727c7" lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S20D64T3YS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-S20D64T3YS');
-</script>
   <meta charset="utf-8">
-  <title>DAFT – Web &amp Multimedia Design</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
- <meta name="description" content="DAFT is a multimedia design studio offering services including video production, motion graphics, graphic design, web design, and branding. Flexible media subscription packages for startups, small businesses, and growing companies.">
-  <meta name="keywords" content="multimedia design, video production, motion graphics, graphic design, web design, branding, logo design, rebranding, creative services, media subscription, DAFT">
+  <title>DAFT | Web &amp; Multimedia Design</title>
+  <meta content="DAFT is a multimedia design studio offering services including video production, motion graphics, graphic design, web design, and branding. Flexible media subscription packages for startups, small businesses, and growing companies." name="description">
   <meta content="DAFT | Web &amp; Multimedia Design" property="og:title">
   <meta content="DAFT is a multimedia design studio offering services including video production, motion graphics, graphic design, web design, and branding. Flexible media subscription packages for startups, small businesses, and growing companies." property="og:description">
   <meta content="DAFT | Web &amp; Multimedia Design" property="twitter:title">
@@ -39,11 +27,6 @@
   <link rel="preload" href="/fonts/9492803-MaisonNeueExt-Demi.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="/fonts/9492805-MaisonNeueExt-Bold.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="/fonts/9492807-MaisonNeueExt-XBold.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="/fonts/9492799-MaisonNeueExt-Book.otf" as="font" type="font/otf" crossorigin="">
-<link rel="preload" href="/fonts/9492803-MaisonNeueExt-Demi.otf" as="font" type="font/otf" crossorigin="">
-<link rel="preload" href="/fonts/9492805-MaisonNeueExt-Bold.otf" as="font" type="font/otf" crossorigin="">
-<link rel="preload" href="/fonts/9492807-MaisonNeueExt-XBold.otf" as="font" type="font/otf" crossorigin="">
-
   <link rel="preload" href="/images/DAFT-website-logo-contact.svg" as="image" type="image/svg+xml">
   <link rel="preload" href="/images/DAFT-Logo.svg" as="image" type="image/svg+xml"><canvas id="noise" class="noise"></canvas>
   <script>
@@ -70,10 +53,16 @@ background: white;
   z-index: 9999;
 }
 .navbar-logo-center-container {
+  /* Start with no glass effect */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.navbar-logo-center-container.glass {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
 }
 .navbar-logo-center-container.no-glass {
   backdrop-filter: none;
@@ -1129,18 +1118,20 @@ function checkScroll() {
   const fullPage0Bottom = fullPage0Top + (fullPage0?.offsetHeight || 0);
   const fullPageAniTop = fullPageAni?.offsetTop || 0;
   const fullPageAniBottom = fullPageAniTop + (fullPageAni?.offsetHeight || 0);
-  // Check if we're in any of these sections
+  // Check if we're in any of these sections - if so, NO glass
   if ((scrollPos >= aboutTop && scrollPos <= aboutBottom) || 
       (scrollPos >= contactTop && scrollPos <= contactBottom) ||
       (scrollPos >= fullPage0Top && scrollPos <= fullPage0Bottom) ||
       (scrollPos >= fullPageAniTop && scrollPos <= fullPageAniBottom)) {
-    navbar.classList.add('no-glass');
+    navbar.classList.remove('glass');
   } else {
-    navbar.classList.remove('no-glass');
+    navbar.classList.add('glass');
   }
 }
 window.addEventListener('scroll', checkScroll);
 window.addEventListener('load', checkScroll);
+// Run immediately to set initial state
+checkScroll();
 </script>
   <script>
 // Register GSAP plugins

@@ -3103,7 +3103,7 @@ img {
 .book-contact1 {
   justify-content: flex-start;
   align-items: center;
-  margin-top: 0;
+  margin-top: 1rem;
   display: flex;
 }
 
@@ -4255,6 +4255,10 @@ img {
     font-size: 1.75rem;
   }
 
+  .book-contact1 {
+    margin-top: 1.5rem;
+  }
+
   .email-nav-contact.underline-trail {
     color: #fff;
   }
@@ -4874,6 +4878,7 @@ img {
   .book-contact1 {
     justify-content: flex-start;
     align-items: center;
+    margin-top: 2rem;
   }
 
   .hey-there {
@@ -5141,7 +5146,7 @@ img {
   .dropdown-content {
     width: 25%;
     margin-right: 7vw;
-    padding-right: 1vw;
+    padding-right: 0;
   }
 
   .dropdown-link {
@@ -5333,7 +5338,7 @@ img {
 
   .navbar-logo-center {
     margin-top: 0;
-    padding-top: 0;
+    padding-top: 1vh;
   }
 
   .navbar-logo-center-container.shadow-three {
@@ -5623,8 +5628,8 @@ img {
   }
 
   .footer-icon-touch {
-    width: 7rem;
-    height: 7rem;
+    width: 8rem;
+    height: 8rem;
     font-size: 2em;
     line-height: 2em;
     display: block;
@@ -5685,6 +5690,10 @@ img {
     display: inline-flex;
   }
 
+  .daft-nav-logo-works {
+    display: none;
+  }
+
   .sticky-mobile {
     height: 100vh;
     overflow: hidden;
@@ -5704,7 +5713,7 @@ img {
 
   .book-contact1 {
     justify-content: flex-start;
-    margin-top: 4vh;
+    margin-top: 1rem;
     display: flex;
   }
 
@@ -5737,7 +5746,7 @@ img {
   }
 
   .mob-arrow-link {
-    display: none;
+    display: inline-block;
   }
 
   .full-page-0-mob {
@@ -6131,6 +6140,7 @@ img {
   .navbar-logo-center {
     background-color: #2e4e8c00;
     margin-top: 0;
+    padding-top: 0;
   }
 
   .navbar-logo-center-container.shadow-three {
@@ -6613,8 +6623,8 @@ img {
   .book-contact1 {
     justify-content: flex-start;
     align-items: center;
-    margin-top: 4vh;
-    margin-left: 7vw;
+    margin-top: 1rem;
+    margin-left: 0;
     display: flex;
   }
 
@@ -7690,7 +7700,7 @@ img {
     flex-flow: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 4vh;
+    margin-top: 1rem;
     margin-left: 7vw;
   }
 
@@ -7727,7 +7737,7 @@ img {
   .text-block-contactfooter {
     margin-left: 7vw;
     margin-right: 7vw;
-    font-size: .9rem;
+    font-size: 1rem;
   }
 
   .email-heading-contact-footer {
